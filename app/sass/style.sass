@@ -1,0 +1,538 @@
+// ==== Common ====
+*
+  box-sizing: border-box
+
+body, html
+  font-family: 'Titillium Web', sans-serif
+  margin: 0
+  padding: 0
+  color: white
+
+  body
+    width: 100%
+a
+  text-decoration: none
+  color: inherit
+
+input, textarea
+  background-color: #273a71
+  border-radius: 4px
+  border: none
+  color: #ffffff
+  font-family: 'Titillium Web', sans-serif
+  font-size: 18px
+  font-weight: 400
+  line-height: 18px
+  margin: 0
+  padding: 25px
+
+input::placeholder, textarea::placeholder
+  color: #ffffff
+
+input
+  height: 56px
+
+
+// ==== /Common ====
+.dash
+  height: 4px
+  width: 88px
+  background-color: rgba(0, 0, 0, .15)
+  margin: 20px 0
+
+// ==== Welcome ====
+.welcome
+  background-color: #87509c
+
+  .header
+    align-items: center
+    display: flex
+    justify-content: space-around
+    padding-top: 57px
+
+    ul
+      display: flex
+      font-size: 16px
+      font-weight: 400
+      line-height: 18px
+      list-style: none
+      text-transform: uppercase
+
+      li
+        align-items: center
+        display: flex
+        height: 32px
+        justify-content: center
+        width: 77px
+
+        a
+          color: white
+
+      .selected
+        border-radius: 4px
+        background-color: #643a79
+
+      li:not(:first-child)
+        margin-left: 11px
+
+  .content
+    align-items: center
+    display: flex
+    flex-direction: column
+
+    .title
+      color: #f7f3ea
+      display: inline-block
+      font-size: 42px
+      font-weight: bold
+      line-height: 49px
+      margin-top: 145px
+      text-align: center
+      width: 55%
+
+    .button
+      align-items: center
+      background-color: #eb7d4b
+      border-bottom: solid 4px rgba(0, 0, 0, .15)
+      border-radius: 4px
+      display: flex
+      font-size: 18px
+      font-weight: 400
+      height: 70px
+      justify-content: center
+      line-height: 26px
+      margin: 54px 0 145px 0
+      width: 293px
+
+// ==== /Welcome ====
+// ==== Services ====
+.services
+  background-color: #17c2a4
+
+  .text-container
+    display: flex
+    padding-top: 119px
+    flex-direction: column
+    align-items: center
+
+    .title
+      font-size: 40px
+      font-weight: 700
+      letter-spacing: 4px
+      line-height: 30px
+
+    .subtitle
+      font-size: 18px
+      font-weight: 400
+      line-height: 26px
+      width: 40%
+      text-align: center
+
+  .categories
+    margin-top: 78px
+    padding-bottom: 128px
+    display: flex
+    justify-content: center
+
+    .categ
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 15%
+      text-align: center
+
+      .title
+        margin-top: 62px
+        font-size: 24px
+        font-weight: 700
+        line-height: 18px
+
+      .subtitle
+        margin-top: 27px
+        font-size: 16px
+        font-weight: 300
+        line-height: 24px
+
+    .categ:not(:first-child)
+      margin-left: 97px
+// ==== /Services ====
+// ==== Team ====
+.team
+  background-color: #e7f1f8
+  padding-bottom: 127px
+
+  .text-container
+    align-items: center
+    color: #3c4761
+    display: flex
+    flex-direction: column
+    padding-top: 119px
+
+    .title
+      font-size: 40px
+      font-weight: 700
+      letter-spacing: 4px
+      line-height: 30px
+
+    .subtitle
+      font-size: 19px
+      font-weight: 400
+      line-height: 27px
+
+
+  .content
+    margin-top: 78px
+    display: flex
+    justify-content: center
+
+    .mate
+      display: flex
+      position: relative
+      flex-direction: column
+      text-align: center
+      align-items: center
+      width: 15%
+
+      .name
+        margin-top: 21px
+        color: #3c4761
+        font-weight: 700
+        font-size: 24px
+        line-height: 18px
+
+      .boss
+        color: #27283d
+
+      .post
+        margin-top: 15px
+        color: #30bae7
+        font-size: 16px
+        font-weight: 400
+        line-height: 18px
+
+      .description
+        margin-top: 26px
+        margin-bottom: 60px
+        color: #3c4761
+        font-size: 16px
+        font-weight: 300
+        line-height: 24px
+
+      .social
+        position: absolute
+        display: flex
+        bottom: 0
+
+        a:not(:first-child)
+          margin-left: 12px
+
+    .mate:not(:first-child)
+      margin-left: 97px
+// ==== /Team ====
+// ==== Skills ====
+.skills
+  color: #3c4761
+  padding-top: 117px
+  padding-bottom: 122px
+  text-align: center
+
+  .text-container
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .title
+      font-size: 40px
+      font-weight: 700
+      line-height: 30px
+      letter-spacing: 4px
+
+    .subtitle
+      font-size: 18px
+      font-weight: 400
+      line-height: 26px
+      width: 30%
+
+  .content
+    display: flex
+    justify-content: center
+    margin-top: 84px
+    flex-wrap: wrap
+
+    .diag_block
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      .diagram
+        display: flex
+        align-items: center
+        justify-content: center
+
+        .pers
+          position: absolute
+          font-size: 50px
+          font-weight: 300
+          line-height: 21px
+
+          .percent
+            font-size: 32px
+
+
+      .text
+        font-size: 24px
+        font-weight: 700
+        line-height: 18px
+        margin-top: 32px
+
+    .diag_block:not(:first-child)
+      margin-left: 5%
+
+// ==== /Skills ====
+// ==== Portfolio ====
+.portfolio
+  background-color: #ffdd99
+  color: #393939
+  padding-bottom: 109px
+  padding-top: 120px
+
+  .text-container
+    display: flex
+    text-align: center
+    align-items: center
+    flex-direction: column
+
+    .title
+      font-size: 40px
+      font-weight: 700
+      line-height: 30px
+      letter-spacing: 4px
+
+    .subtitle
+      font-size: 18px
+      font-weight: 400
+      line-height: 26px
+      width: 30%
+
+  .menu
+    margin-top: 42px
+    margin-bottom: 65px
+    font-size: 18px
+    font-weight: 400
+    line-height: 20px
+
+    ul
+      list-style: none
+      display: flex
+      justify-content: center
+
+      li
+        background-color: #e5c689
+        width: 84px
+        height: 38px
+        border-radius: 4px
+        display: flex
+        align-items: center
+        justify-content: center
+
+      .selected
+        background-color: #ffffff
+
+      a:not(:first-child)
+        margin-left: 10px
+  .content-wrap
+    display: flex
+    justify-content: center
+
+    .content
+      display: flex
+      flex-wrap: wrap
+      max-width: 1200px
+      justify-content: center
+
+      .example
+        margin-bottom: 64px
+        font-size: 18px
+        font-weight: 400
+        line-height: 20px
+        text-transform: uppercase
+        text-align: center
+
+        p
+          margin-top: 32px
+          margin-bottom: 0
+
+      .example:not(:nth-child(2n + 1))
+        margin-left: 20px
+
+        @media (max-width: 1100px)
+          margin-left: 0
+
+  .loadMoreButton
+    display: flex
+    justify-content: center
+
+    .btn
+      width: 295px
+      height: 70px
+      display: flex
+      justify-content: center
+      align-items: center
+      background-color: #17c2a4
+      border-radius: 4px
+      border-bottom: rgba(0, 0, 0, .15) 4px solid
+
+// ==== /Portfolio ====
+// ==== Testimonials ====
+.testimonials
+  background-color: #d74680
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  .title-container
+    padding-top: 120px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .title
+      font-size: 40px
+      font-weight: 700
+      line-height: 30px
+      letter-spacing: 4px
+
+    .subtitle
+      font-size: 18px
+      font-weight: 400
+      line-height: 26px
+
+  .reviews-container
+    padding-top: 70px
+    padding-bottom: 130px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    //width: 60%
+    max-width: 1500px
+
+    .review
+      display: flex
+      //width: 45%
+      margin-right: 5%
+      max-width: 490px
+      min-width: 400px
+      margin-bottom: 100px
+
+      .photo
+        margin-right: 48px
+
+      .text
+        display: flex
+        flex-direction: column
+
+        .review-text
+          font-size: 21px
+          line-height: 31px
+
+        .subtext
+          margin-top: 28px
+
+          .name
+            font-size: 24px
+            font-weight: 700
+            line-height: 26px
+
+          .post
+            margin-top: 10px
+            color: #ffdd99
+            font-size: 18px
+            font-weight: 400
+            line-height: 26px
+
+// ==== /Testimonials ====
+// ==== Get in touch ====
+.get_in_touch
+  background-color: #3c5499
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  .container
+    padding-bottom: 115px
+    display: flex
+    width: 100%
+    flex-direction: column
+    align-items: center
+
+    .text-container
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding-top: 120px
+
+      .title
+        font-size: 40px
+        font-weight: 700
+        line-height: 30px
+        letter-spacing: 4px
+
+      .subtitle
+        font-size: 18px
+        font-weight: 400
+        line-height: 26px
+
+    .form-container
+      width: 50%
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding-top: 76px
+
+      .name-mail
+        display: flex
+        justify-content: space-between
+        width: 100%
+
+        .name
+          width: 48%
+
+        .pass
+          width: 48%
+
+      .message
+        margin-top: 27px
+        width: 100%
+        height: 200px
+
+    a
+      .send-button
+        display: flex
+        justify-content: center
+        align-items: center
+        border-bottom: solid 4px rgba(0, 0, 0, .15)
+        border-radius: 4px
+        text-align: center
+        background-color: #30bae7
+        margin-top: 60px
+        width: 300px
+        height: 70px
+
+// ==== /Get in touch ====
+// ==== Footer ====
+footer
+  background-color: #344b8e
+  display: flex
+  font-size: 24px
+  font-weight: 400
+  height: 112px
+  justify-content: center
+  align-items: center
+  line-height: 30px
+
+  a+a
+    margin-left: 3%
+
+  .twitter
+    color: #30bae7
+// ==== /Footer ====
